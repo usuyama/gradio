@@ -189,8 +189,8 @@ class App(FastAPI):
                     key="access-token",
                     value=token,
                     httponly=True,
-                    samesite="none",
-                    secure=True,
+                    samesite="Lax",
+                    secure=False,
                 )
                 return response
             else:
